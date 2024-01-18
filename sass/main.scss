@@ -1,0 +1,217 @@
+// reset
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height:auto
+}
+// $color:
+// Fonts
+$heading-antic-didone: "Antic Didone";
+$base-text-lato: "Lato";
+$base-text-raleway: "Raleway";
+
+// Palette
+$orange-main: #E78C15;
+$orange-dark: #7D4700;
+$background-nav-main: #fff;
+$dark-black: #0c0e0d;
+$background-main:#F4F7F6;
+$background-main-header:#1D1D1D;
+$text-color-header:#fff;
+$background-main-footer:#1D1D1D;
+$text-color-footer:#fff;
+$color-quote:gray;
+$background-tittle-card:#fff;
+
+// REM font-sizes
+$fs-14: 0.875rem;
+$fs-16: 1rem;
+$fs-18: 1.125rem;
+$fs-20: 1.25rem;
+$fs-22: 1.375rem;
+$fs-24: 1.5rem;
+$fs-32: 2rem;
+$fs-33: 2.0625rem;
+$fs-36: 2.25rem;
+$fs-40: 2.5rem;
+$fs-50: 3.125rem;
+$fs-60: 3.75rem;
+$fs-80: 5rem;
+
+// dimensions
+$table-sub-container: 600px;
+
+// breakpoints
+$lg-breakpoint: 1130px;
+// Les ID #
+#logo{
+    margin-top: 30px;
+    width: 50px;
+}
+#contact{
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+#projects{
+display: flex;
+flex-wrap: wrap;
+}
+// Les classes
+
+body
+{
+    // font-family:  ;
+    background-color: $background-main;
+    // background-image: url(###);
+    // background-attachment:scroll;
+    // background-repeat: repeat-x;  <-- le fond d'écran se répète horizontalement
+    // background-position: center center ;
+}
+ul {
+    display: inline;
+}
+li {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    &{
+        &:hover{
+        //   color:$orange-main; 
+          font-weight: bold; 
+        }
+    }
+    // &:focus {
+		// color: $orange-main;
+	//  }
+}
+
+h1{
+    text-align: center;
+    padding-top: 30px;
+    // opacity: 0.5;
+    // border: 2px black solid;
+    // border-bottom: 1px black solid;
+    // box-shadow: 1px 5px 5px black;
+    // text-shadow: 5px 5px 5px silver;
+    
+   
+    
+}
+h2{
+    // border: 1px black solid;
+    // border-radius: 1px;
+    font-size: $fs-24;
+    width: 400px;
+    margin: auto;
+
+}
+h3::before{
+    content: "« ";
+    color:$color-quote;
+}
+h3::after{
+    content: " »";
+    color:$color-quote;
+}
+h3{
+    font-size: $fs-24;
+    text-transform: uppercase;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-main-header;
+    color: $text-color-header;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.separator{
+    width: 40px;
+    height: 1px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #999999;
+}
+nav{
+    text-align: center;
+    background:$background-nav-main;
+    box-shadow: 0px 3px 1px -1px rgba(0,0,0,0.5);
+    font-size: $fs-18;
+    padding: 15px;
+}
+.main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+// cards*******************************************************
+.projet{
+width: 400px;
+margin: 30px;
+display: inline-block;
+background-color: $background-tittle-card;
+padding-bottom: 15px;
+border: 0px black solid;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    &:hover{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        transition: 0.4s;
+    }
+
+}
+.projet img {
+width: 400px;
+height: 266px;
+
+}
+.picture{
+width: 400px;
+height: 266px;
+overflow: hidden;
+margin-bottom: 15px;
+}
+.projet .date-project{
+    font-size: $fs-14;
+}
+.projet span{
+    text-transform: uppercase;
+    display: block;
+}
+
+// fin cards*************************************************
+footer{
+    font-weight: bold;
+    font-size: $fs-24;
+    background-color: $background-main-footer;
+    color:$text-color-footer;
+    text-align: center;
+    padding: 15px;
+}
